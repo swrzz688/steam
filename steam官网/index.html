@@ -429,11 +429,19 @@
 			})
 
 
-			// var $xiaotulist=$(".xiaotu").find(".xiaotu a")
 			var $xiaotulist=$(this).find(".xiaotu a")
-			// $(".xiaotu a")
 			console.log($xiaotulist)
-			// for(var i=0;i<)
+			var $datulist= $(this).find(".zuotu img")	//找到中间的背景图
+			for(a=0;a<$xiaotulist.length;a++){
+				$xiaotuList.eq(a).attr("index",a)	//设置非法属性
+			}
+			$xiaotulist.mouseover(function(){
+				$hezi.find(".zuotu").css({
+					background:"none", 	//鼠标移上时隐藏图片的父级元素(.img)的背景图片
+				})
+				var zhi = $(this).attr("index")
+				$datulist.eq(zhi).fadeIn()  //渐显
+			})
 		</script>
 </body>
 </html>
