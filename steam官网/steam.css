@@ -22,7 +22,6 @@ a{
     width: 940px;
     height: 104px;
     position: relative;
-    padding-left: 92px;
 }
 .top_logo{
     width: 176px;
@@ -365,28 +364,45 @@ a{
     background-color: #171a21;
     color: #fff;
 }
-.zhong_dh input{
-    border:1px solid #666;
-    background-color: transparent;
-    margin-left: 8px;
-    width: 180px;
-    outline: none;
-    line-height: 26px;
+.zhong_dh .ipt{
+    position: relative;
     float: right;
-    margin-right: 3px;
-    margin-top: 3px;
-    border-radius: 3px;
-    text-indent: 10px;
+    margin-right: 5px;
 }
-.zhong_dh input.ipt{
-    color: #0e1c25;
-    font-size: 14px;
+.zhong_dh .ipt input{
+    width: 228px;
+    height: 27px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background-color: transparent;
+    background-size:cover;
     margin-top: 3px;
-    text-shadow: 1px 1px 0px rgba( 255, 255, 255, 0.1);
-    font-family: "Motiva Sans", Sans-serif;
-    font-weight: 300;
-    background-image: url(images/fangdaji.png);
-    background-position:182px 58px;
+    border:1px solid #444;
+    text-indent: 10px;
+    color: #0e1c25;
+}
+.zhong_dh .ipt img{
+    display: block;
+    position: absolute;
+    top:5px;
+    right: 2px;
+    width: 26px;
+    height: 25px;
+    z-index: 10;
+    opacity: .5;
+}
+.zhong_dh .ipt input::-webkit-input-placeholder{
+    font-size: 14px;
+    font-style: italic;
+    color: #333;
+    letter-spacing: 2px;
+}
+.zhong_dh .ipt input:hover{
+    border:1px solid #348fec;
+}
+.zhong_dh .ipt img:hover{
+    opacity: 1;
 }
 .zhong_zcl{
     float: left;
@@ -415,7 +431,7 @@ a{
     background-repeat: no-repeat;
     margin-right: 10px;
 }
-.zhong_leirong ul li:hover a{
+.zhong_leirong ul li a:hover{
     color: #fff;
 }
 .lishixing{
@@ -437,8 +453,7 @@ a{
 
 .lunbotu{
     height: 410px;
-    width: 940px;
-    float: left;
+    width: 940px;   
     margin-top: 50px;
 }
 .lunbotu .dahezi{
@@ -576,6 +591,7 @@ a{
     width: 45px;
     height: 108px;
     margin-top: -54px;
+    cursor:pointer;
 }
 .arrowsLeft{
     left: -45px;
@@ -617,9 +633,223 @@ a{
 .dian span.yance{
     background-color: hsla(202,60%,100%,0.4);
 }
-
-
-
+.tanchucen{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: -231px;
+    z-index: 1;
+    width: 200px;
+    background-color: #e1e8ee;
+    padding: 10px 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,.4);
+    font-size: 12px;
+    color:#555;
+}
+.tanchucen .text{
+    max-height: 50px;
+}
+.text .ming{
+    font-size: 16px;
+    color: #555;
+}
+.tanchucen .img{
+    position: relative;
+    width: 200px;
+    height: 140px;
+    margin:10px 0;
+}
+.tanchucen .img img{
+    position: absolute;
+    top: 0;
+    left:0;
+    display: block;
+    width: 100%;
+    height: 140px;
+}
+.tanchucen .pingce{
+    height: 35px;
+    background-color: #777;
+    text-indent: 5px;
+    color: #ddd;
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+.pinse{
+    color: #66c0f4;
+    padding-right: 5px;
+}
+.biaoqian{
+    padding-top: 5px;
+}
+.biaoqian span{
+    margin-top: 20px;
+    padding: 3px 5px;
+    background-color: #aaa;
+    border-radius: 3px;
+    color: #fff;
+}
+.erlun{
+    width: 940px;
+    height: 483px;
+    margin-top: 30px;
+}
+.erlun .erlun_lei{
+    width: 940px;
+    height: 429px;
+    position: relative;
+}
+.erlun .erlun_lei1{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.erlun .erlun_lei2{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.erlun>p{
+    font-size: 17px;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+.erlun>p a{
+    float: right;
+    font-size: 12px;
+    border: 1px solid #777;
+    border-radius: 2px;
+    padding: 2px 10px 2px 10px;
+    cursor: pointer;
+}
+.erlun p a:hover{
+    border: 1px solid #fff;
+}
+.erlun_lei .rehezi{
+    width: 306px;   
+    float: left;
+    height: 390px;
+    margin-right: 11px;
+}
+.erlun_one_xia{
+    width: 306px;
+    height:114px;
+    background: url(images/erlunbj.jpg)no-repeat;
+    background-position-y:-114px; 
+    margin-top: 0px;
+    padding-top: 0px; 
+}
+.erlun_one_xia h2{
+    color: #fff;
+    margin: 0 0 5px;
+    font-size: 17px;
+    font-weight: normal;
+    padding-top: 2px;
+    margin-left: 10px;
+}
+.erlun_one_xia p{
+    font-weight: 300;
+    color: #acdbf5;
+    font-size: 12px;
+    margin-left: 10px;
+}
+.erlun_one_xia .jiqian{
+    width: 274px;
+    height: 36px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.jiqian .baifen{
+    line-height: 36px;
+    padding: 0 5px;
+    font-size: 26px;
+    color: #a4d007;
+    background: #4c6b22;
+    display: inline-block;
+    float: left;
+}
+.jiqian .jiangjia{
+    width: 27px;
+    height: 25px;
+    padding: 4px 4px 7px 4px;
+    background-color: rgba(0,0,0,0.6);
+    display: inline-block;
+    float: left;
+}
+.jiangjia .yuanjia{
+    text-decoration: line-through;
+    color: #7193a6;
+    font-size: 11px;
+    line-height: 13px;
+}
+.jiangjia .xianjia{
+    color: #acdbf5;
+    font-size: 13px;
+    line-height: 13px;
+}
+.erlun_three>a img{
+    width: 306px;
+    height: 143px;
+}
+.rehezi .three_bj1{
+    background: url(images/erlunbj.jpg)no-repeat;
+    background-position-y:-18px; 
+    height: 186px;
+    width: 306px;
+    margin-bottom: 17px;
+}
+.rehezi .three_bj2{
+    background: url(images/erlunbj.jpg)no-repeat;
+    background-position-y:-18px; 
+    height: 186px;
+    width: 306px;
+}
+.erlun_three .jiqian{
+    float: right;
+    margin-right: 6px;
+}
+.erlun_lei .erlun_lei1 .erlun_three{
+    margin-right: 0px;
+}
+.erlun_lei .erlun_lei2 .erlun_three{
+    margin-right: 0px;
+}
+.rehezi img{
+    height: 295px;
+    width: 306px;
+}
+.twoarrowsLeft,.twoarrowsRight{
+    position: absolute;
+    top: 50%;
+    width: 45px;
+    height: 108px;
+    margin-top: -54px;
+    cursor:pointer;
+}
+.twoarrowsLeft{
+    left: -45px;
+    background: linear-gradient( to right, rgba( 0, 0, 0, 0.3) 5%,rgba( 0, 0, 0, 0) 95%);
+}
+.twoarrowsLeft:hover{
+    background: linear-gradient( to right, rgba( 171, 218, 244, 0.3) 5%,rgba( 171, 218, 244, 0) 95%)
+}
+.twoarrowsRight{
+    right: -45px;
+    background: linear-gradient( to right, rgba( 0, 0, 0, 0) 5%,rgba( 0, 0, 0, 0.3) 95%);
+}
+.twoarrowsRight:hover{
+    background: linear-gradient( to right, rgba( 171, 218, 244, 0) 5%,rgba( 171, 218, 244, 0.3) 95%);`
+}
+.twoarrowsLeft div,.twoarrowsRight div{
+    width: 23px;
+    height: 36px;
+    margin: 36px auto; 
+    background: url(images/arrows.png) no-repeat;
+}
+.twoarrowsLeft div{
+    background-position: -23px 0;
+}
 
 
 
