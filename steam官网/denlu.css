@@ -404,239 +404,97 @@ color: #fff;
 .zhong_dh .ipt img:hover{
     opacity: 1;
 }
-.zh_center .biaoti{
+.enter_matter{
     width: 940px;
-    height: 72px;
-    padding-top: 50px;
+    margin: 0 auto;
+    margin-top:50px;
 }
-.biaoti .leibie a{
-    color: #56707f;
+.left_matter{
+    width: 616px;
+    float: left;
+}
+.matter_box{
+    background-color: rgba(0,0,0,0.2);
+    position: relative; 
+}
+.loginbox{
+    min-height: 352px;
+    padding: 16px;
+}
+.loginbox .logon_row{
+    margin-bottom: 18px;
+}
+.loginbox_left{
+    float: left;
+    width: 274px;
+    padding: 0 16px 14px 0;
+    position: relative;
+}
+.loginbox_left h2{
+    font-size: 18px;
+    color: #67c1f5;
+    font-weight: 300;
+}
+.loginbox_left p{
     font-size: 12px;
-    font-family: "Motiva Sans", Sans-serif;
-    font-weight: normal;
+    color: #c6d4df;
 }
-.biaoti .leibie span{
-    font-size: 11px;
-    color: #56707f;
+.logon_row .input_name{
+    font-size: 12px;
+    color: #c6d4df;   
 }
-.biaoti .leibie a:hover{
+.background_input{
+    background-color: rgba(0,0,0,0.2);
     color: #fff;
+    border: 1px solid #000;
+    border-radius: 3px;
+    box-shadow: 1px 1px 0 #45556c;
+    width: 260px;
+    padding: 5px;
+    margin: 4px 0;
+    height: 18px;
 }
-.xiangmu .shequ a{
-    float: right;
+.loginbox_sep{
+    margin-left: 306px;
+    border-left: 1px solid #38444e;
+    width: 2px;
+    height: 210px;
+    margin: 0;
+    float: left;
+}
+.loginbox_right{
+    float: left;
+    width: 274px;
+    padding: 0 0 14px 16px;
+    float: left;
+}
+.loginbox_right h2{
+    color: #67c1f5;
+    font-size: 18px;
+    font-weight: 300;
+}
+.loginbox_right p{
+    font-size: 12px;
+    color: #c6d4df;
+}
+.loginbox_left.btn{
+    height: 33px;
+}
+.btn_niu{
     border-radius: 2px;
     border: none;
-    padding: 1px;
     display: inline-block;
+    padding: 1px;
     cursor: pointer;
-    text-decoration: none;
-    color:#67c1f5;
-    background: rgba( 103, 193, 245, 0.2 );
+    color: #67c1f5;
+    background-color: rgba(103,193,245,0.2);
 }
-.xiangmu .shequ span{
+.btn_niu span{
     padding: 0 15px;
     font-size: 15px;
     line-height: 30px;
 }
-.xiangmu .shequ a:hover{
+.btn_niu:hover{
+    background-color: rgba(103,193,245,0.8);
     color: #fff;
-    background: rgba( 103, 193, 245, 0.6 );
-}
-.xiangmu .xm_name{
-    color:#fff;
-    font-size: 26px;
-    line-height: 32px;
-    text-overflow: ellipsis;
-}
-.lunbo{
-    background: url(images/xiangqinglunbobj.png);
-    background-position: bottom;
-    padding-bottom: 380px;
-    background-repeat: no-repeat;
-    margin: 0px auto;
-}
-.nbalb .lunbotu{
-    width: 940px;
-    margin: 0 auto;
-    background: -webkit-gradient(linear, left top, right top, color-stop(50%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.4)));
-}
-.lunbotu .lun_you{
-    width: 324px;
-    margin-left: 0px;
-    float: right;
-}
-.lunbotu .lun_zuo{
-    width: 616px;
-    float: left;
-}
-.lun_you .fenmian img{
-    width: 324px;
-    height: 151px;
-}
-.lun_you .jianjie{
-    max-height: 111px;
-    overflow: hidden;
-    font-size: 13px;
-    line-height: 18px;
-    padding-right: 16px;
-    color:#c6d4df;
-}
-.pince{
-    width: 324px;
-    height: 102px;
-}
-.pince .pc_lr{
-    font-size: 12px;
-    color: #556772;
-    margin-top: 10px;
-}
-.pince .pc_lr .chap{
-    color: #A34C25;
-    margin-left: 50px;
-    cursor: pointer;
-}
-.time{
-    margin-top: 10px;
-    margin-bottom: 35px;
-}
-.time .riqi{
-    float: left;
-}
-.time .riqihao{
-    float: left;
-    margin-left: 54px;
-    color: #8f98a0;
-}
-.kaifa{
-    margin-bottom: 51px;
-}
-.kaifa .kf_shang{
-    float: left;
-}
-.kaifa .kf_name{
-    float: left;
-    margin-left: 68px;
-}
-.kaifa .kf_name a{
-    color: #67c1f5;
-}
-.faxing .fx_shang{
-    float: left;
-}
-.faxing .fx_name{
-    float: left;
-    margin-left: 68px;
-}
-.faxing .fx_name a{
-    color: #67c1f5;
-}
-.kf_name a:hover,.fx_name a:hover{
-    color: #fff;
-}
-.fl_biaoqian{
-    margin: 5px 0px 0px 0px;
-    font-size: 11px;
-}
-.fl_biaoqian .biao_top{
-    line-height: 19px;
-    font-size: 12px;
-    color: #556772;
-}
-.fl_biaoqian .biao_bottom a{
-    display: inline-block;
-    line-height: 19px;
-    padding: 0 7px;
-    color: #67c1f5;
-    background-color: rgba( 103, 193, 245, 0.2 );
-    box-shadow: none;
-    margin-right: 2px;
-    border-radius: 2px;
-    cursor: pointer;
-    margin-bottom: 3px;
-    max-width: 200px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-.fl_biaoqian .biao_bottom a:hover{
-     background-color: rgba( 103, 193, 245, 0.8 );
-     color: #fff;
-}
-.lz_lr{
-    overflow: hidden;
-    margin-right: 16px;
-    position: relative;
-}
-.lz_lr .lr_datu{
-    background-color: #000;
-    overflow: hidden;
-    position: relative;
-    height: 337px;
-}
-.lr_datu .nba_tu img{
-    display: block;
-    width: 100%;
-}
-.lr_datu .nba_tu{
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.footer{
-    padding: 16px 0 50px 0;
-    background: linear-gradient(to bottom,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.8) 100%);
-}
-.footer_content{
-    width: 940px;
-    margin: 0 auto;
-    padding-top: 16px;
-    overflow: hidden;
-}
-.rule{
-    height: 8px;
-}
-.footer_logo_steam{
-    float: right;
-    padding-top: 2px;
-}
-.footer_logo{
-    float: left;
-    padding-top: 2px;
-}
-.footer_text{
-    float: left;
-    margin-left: 12px;
-    color: #8F98A0;
-    line-height: 16px;
-    font-size: 12px;
-}
-.footer_text a{
-    color: #C6D4DF;
-}
-.footer_text a:hover{
-    color: #fff;
-}
-.valve_links{
-    margin-top: 15px;
-    float: left;
-    font-size: 13px;
-}
-.valve_links a{
-    color: #C6D4DF;
-}
-.valve_links a:hover{
-    color: #fff;
-}
-.valve_links img{
-    vertical-align: bottom;
-}
-.footer_nav{
-    width: 940px;
-    height: 20px;
-}
-.footer_nav a{
-    margin-right: 5px;
-    border-radius: 2px;
-    border: none;
 }

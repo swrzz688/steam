@@ -1,95 +1,99 @@
 //侧边栏的图像
 var $iList = $(".zhong_leirong i")
-	for(var i = 0;i<$iList.length;i++){
-	$iList[i].style.backgroundPosition = -(i*16)+"px"
+for(var i = 0;i<$iList.length;i++){
+$iList[i].style.backgroundPosition = -(i*16)+"px"
+}	
+
+var $left=$(".arrowsLeft")
+var $right=$(".arrowsRight")
+var $hezi=$(".dahezi").find(".hezi")
+var $dian=$(".dian")
+var w=0 	// 盒子当前位置
+
+// 向右运动逻辑
+function rightstar(banner,yuandian){
+	yuandian.find("span").eq(w).removeClass("yance")
+	banner.hide()
+	if(w < banner.length-1){
+		w++
+	}else{
+		w=0
 	}
+	banner.eq(w).fadeIn(500)
+	yuandian.find("span").eq(w).addClass("yance")
+}
+	
 
-	var $left=$(".arrowsLeft")
-	var $right=$(".arrowsRight")
-	var $hezi=$(".dahezi").find(".hezi")
-	var $dian=$(".dian")
-	var w=0 	// 盒子当前位置
-
-	// // 向右运动逻辑
-	function rightstar(banner,yuandian){
-		yuandian.find("span").eq(w).removeClass("yance")
+//向右点击逻辑
+function right(right,banner,yuandian){
+	right.click(function(){
 		banner.hide()
-		if(w==banner.length-1){
-			w=0
-		}else{
+		yuandian.find("span").removeClass("yance")
+		if(w < banner.length-1){
 			w++
+		}else{
+			w=0
 		}
 		banner.eq(w).fadeIn(500)
 		yuandian.find("span").eq(w).addClass("yance")
-	}
-	
+	})
+}
+right($(".arrowsRight"),$(".dahezi").find(".hezi"),$(".dian"))               //one-lun右点击事件
+right($(".erlun .twoarrowsRight"),$(".erlun_lei").find(".box"),$(".erlun .erdian")) //two-lun右点击事件
 
-	//向右点击逻辑
-	function right(right,banner,yuandian){
-		right.click(function(){
-			banner.hide()
-			yuandian.find("span").removeClass("yance")
-			if(w==banner.length-1){
-				w=0
-			}else{
-				w++
-			}
-			banner.eq(w).fadeIn(500)
-			yuandian.find("span").eq(w).addClass("yance")
-		})
-	}
-	right($(".arrowsRight"),$(".dahezi").find(".hezi"),$(".dian"))
-
-
-	//向左点击逻辑
-	function left(left,banner,yuandian){
-		left.click(function(){
-			banner.hide()
-			yuandian.find("span").eq(w).removeClass("yance")
-			if(w==0){
-				w=banner.length-1
-			}else{
-				w--
-			}
-			banner.eq(w).fadeIn(500)
-			yuandian.find("span").eq(w).addClass("yance")
-		})
-	}
-	left($(".arrowsLeft"),$(".dahezi").find(".hezi"),$(".dian"))
-
-
-	//生成点
-	function shengchendian(changdu,dianfuji){
-		for(var d=0;d<changdu;d++){
-			var $dav = $("<span></span>")
-			$dav.attr("index",d)
-			$dav.appendTo(dianfuji)
+//向左点击逻辑
+function left(left,banner,yuandian){
+	left.click(function(){
+		banner.hide()
+		yuandian.find("span").eq(w).removeClass("yance")
+		if(w==0){
+			w=banner.length-1
+		}else{
+			w--
 		}
+		banner.eq(w).fadeIn(500)
+		yuandian.find("span").eq(w).addClass("yance")
+	})
+}
+left($(".arrowsLeft"),$(".dahezi").find(".hezi"),$(".dian"))
+left($(".twoarrowsLeft"),$(".erlun_lei").find(".box"),$(".erdian"))
+
+
+//生成点
+function shengchendian(changdu,dianfuji){
+	for(var d=0;d<changdu;d++){
+		var $dav = $("<span></span>")
+		$dav.attr("index",d)
+		$dav.appendTo(dianfuji)
 	}
-	shengchendian($(".hezi").length,$(".dian"))
-	$dian.find("span").eq(0).addClass("yance")
+}
+shengchendian($(".hezi").length,$(".dian"))         //one-lun点生成
+$dian.find("span").eq(0).addClass("yance")  
+shengchendian($(".box").length,$(".erlun .erdian")) //two-lun点生成
+$(".erlun .erdian").find("span").eq(0).addClass("yance")
+
+//点的点击逻辑
+function diandj(yuandian,banner){
+	yuandian.find("span").click(function(){
+		banner.hide()
+		yuandian.find("span").removeClass("yance")
+		w=Number($(this).attr("index"))
+		banner.eq(w).fadeIn(800)
+		yuandian.find("span").eq(w).addClass("yance")
+	})
+}
+diandj($(".dian"),$(".hezi"))          //one-lun点的点击事件
+diandj($(".erlun .erdian"),$(".box"))  //two-lun点的点击事件
 
 
-	//点的点击逻辑
-	function diandj(yuandian,banner){
-		yuandian.find("span").click(function(){
-			banner.hide()
-			yuandian.find("span").removeClass("yance")
-			w=Number($(this).attr("index"))
-			banner.eq(w).fadeIn(800)
-			yuandian.find("span").eq(w).addClass("yance")
-		})
-	}
-	diandj($(".dian"),$(".hezi"))
-
-	// 自动播放
-	function auto(){
+// -----------one轮播图弹出层和计时器及自动播放
+// 自动播放 
+function auto(){
 	autoplay = setInterval(function(){
 		rightstar($(".hezi"),$(".dian"))
 	},3000)	
 }
 auto()
-
 // 鼠标移上关闭计时器
 $(".dahezi").mouseenter(function(){
 	clearInterval(autoplay)
@@ -99,12 +103,12 @@ $(".dahezi").mouseleave(function(){
 	auto()
 })
 //鼠标移上点，关闭计时器
-$(".dian").find("span").mouseenter(function(){
+$(".dian").mouseenter(function(){
 	clearInterval(autoplay)
 })
 //鼠标离开点，开启计时器
-$(".dian").find("span").mouseleave(function(){
-	auto(); 
+$(".dian").mouseleave(function(){
+	auto() 
 })
 
 // 弹出层和弹出层轮播图+
@@ -142,7 +146,7 @@ $hezi.mouseenter(function(){
 	var t=0
 	$(this).find(".tanchucen").fadeIn()
 	// 获取每个弹出层
-	var $img=$(this).find(".img img")
+	$img=$(this).find(".img img")
 	// 获取弹出层的每张照片
 	autotan=setInterval(function(){
 		for(var n=0;n<$img.length;n++){
@@ -163,8 +167,19 @@ $hezi.mouseleave(function(){
 	clearInterval(autotan)
 	// 鼠标离开hezi隐藏所对应的弹出层
 	$(this).find(".tanchucen").hide()
+	for(var n=0;n<$img.length;n++){
+			$img.eq(n).hide()
+	}
+	t = 0
+	$img.eq(0).fadeIn(200)	
 })
+// -------------------------------------------------
 
+
+//-----------------------------------------------------two轮播图
+
+// left($(".arrowsLeft"),$(".dahezi").find(".hezi"),$(".dian"))       //左点击事件                          //生成点
+// diandj($(".dian"),$(".hezi"))                                      //点的点击事件
 
 
 
