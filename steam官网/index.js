@@ -176,12 +176,19 @@ $hezi.mouseleave(function(){
 // -------------------------------------------------
 
 
-//-----------------------------------------------------two轮播图
-
-// left($(".arrowsLeft"),$(".dahezi").find(".hezi"),$(".dian"))       //左点击事件                          //生成点
-// diandj($(".dian"),$(".hezi"))                                      //点的点击事件
-
-
+//tab选项卡
+$(".tab_List li").mouseenter(function(){
+	if(!$(this).hasClass("show")){
+		var zhi = $(this).index();
+		$(".tab_matter .show").fadeOut(100,function(){ 	//先渐隐
+			$(".tab_matter li").eq(zhi).fadeIn(100);		//后渐显
+		});
+		$(".tab_List li").removeClass("show")
+		$(".tab_matter li").removeClass("show")
+		$(this).addClass("show")
+		$(".tab_matter li").eq(zhi).addClass("show")
+	}
+})
 
 
 
