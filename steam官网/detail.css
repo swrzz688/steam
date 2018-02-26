@@ -448,10 +448,17 @@ color: #fff;
     line-height: 32px;
     text-overflow: ellipsis;
 }
-.lunbo{
-    background: url(images/xiangqinglunbobj.png);
+.nba{
+    background: url(images/xiangqinglunbobj.png)no-repeat;
     background-position: bottom;
-    padding-bottom: 380px;
+    padding-bottom: 1px;
+    background-repeat: no-repeat;
+    margin: 0px auto;
+}
+.lunbo{
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0) 50%,rgba(0,0,0,0.4) 100%);
+    background-position: bottom;
+    padding-bottom: 430px;
     background-repeat: no-repeat;
     margin: 0px auto;
 }
@@ -582,6 +589,348 @@ color: #fff;
     top: 0;
     left: 0;
 }
+.nba_xiatu{
+    margin-top: 4px;
+    position: relative;
+    height: 69px;
+    margin-bottom: 4px;
+    z-index: 6;
+}
+.nba_xiatu .sceoll{
+    position: relative;
+    height: 69px;
+}
+.selector{
+    position: absolute;
+    width: 116px;
+    height: 77px;
+    top: -10px;
+    background-image: url(images/kuang.png);
+    z-index: 9;
+}
+.sceoll .tu_item{
+    float: left;
+    height: 65px;
+    width: 116px;
+    cursor: pointer;
+    text-align: center;
+    margin: 2px;
+    background-color: #000;
+    position: relative;
+}
+.tu_ctn{
+    position: relative;
+    height: 18px;
+}
+.tu_ctn .left_ctn{
+   /* position: absolute;
+    width: 38px;
+    bottom: 0;s
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: rgba( 35, 60, 81, 0.4 );
+    left: 0;*/
+}
+.left_ctn span{
+   /* display:inline-block;
+    background-image: url(images/xiangqing.png);
+    background-position: -18px 0px;
+    background-repeat: no-repeat;
+    width: 9px;
+    height: 7px;
+    margin-left: 13px;
+    margin-top: 5px;*/
+}
+
+
+
+.guanzhu{
+    overflow: hidden;
+}
+.gz_big{
+    padding: 16px;
+    font-size: 12px;
+    color: #c6d4df;
+}
+.gz_big a{
+    color: #fff;
+    cursor: pointer;
+}
+.gz_big a:hover{
+    color: #67c1f5;
+}
+.guanzhu_ctn{
+    width: 940px;
+    margin: 0 auto;
+    background: rgba(0,0,0,0.2);
+    margin-bottom: 16px;
+}
+.clear{
+    clear:both;
+}
+.regard_right{
+    overflow: hidden;
+    margin-top: 16px;
+    width: 308px;
+    float: right;
+    margin-left: 14px;
+}
+.regard_right .hobby{
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 18px;
+    margin-bottom: 0px;
+}
+.responsive_one{
+    color: #acb2b8;
+    font-size: 14px;
+    line-height: 22px;
+}
+.bjs{
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.5) 100%);
+    padding: 16px;
+    margin-bottom: 8px;
+    margin-top: 0px;
+}
+.responsive_one a{
+    background: rgba( 103, 193, 245, 0.2 );
+    border-radius: 2px;
+    color: #67c1f5;
+    display: inline-block;
+    cursor: pointer;
+}
+.responsive_one a span{
+    padding: 0 15px;
+    font-size: 15px;
+    line-height: 30px;
+}
+.responsive_one a:hover{
+    color: #fff;
+    background: rgba( 103, 193, 245, 0.8 );
+}
+.responsive_two .game_area{
+    height: 26px;
+    position: relative;
+    margin-bottom: 2px;
+}
+.game_tu{
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 22px;
+    padding-top: 5px;
+    padding-left: 6px;
+    background: rgba(0,0,0,0.2);
+}
+.game_tu img{
+    width: 26px;
+    height: 16px;
+    vertical-align: top;
+    cursor: pointer;
+}
+.area_name{
+    margin-left: 37px;
+    height: 22px;
+    padding-top: 4px;
+    padding-left: 8px;
+    line-height: 18px;
+    background: rgba( 103, 193, 245, 0.1 );
+    color: #67c1f5;
+    display: block;
+    border-radius: 1px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.area_name:hover{
+    color: #fff;
+    background: rgba(103,193,245,0.8);
+}
+.game_sanfang{
+    background: linear-gradient(135deg, rgba(130,114,81,0.5) 0%,rgba(226,197,139,0.5) 100%);
+    color: #e1c48a;
+    padding: 4px 8px;
+    line-height: 17px;
+    border-radius: 1px;
+    margin-top: 12px;
+    font-size: 12px;
+}
+.game_sanfang a{
+    color: #fff;
+    cursor: pointer;
+}
+.game_sanfang a:hover{
+    color: #67c1f5;
+}
+.three_title{
+    font-size: 12px;
+    color: #8f98a0;
+    margin-bottom: 2px;
+}
+.title_options{
+    border-collapse:collapse;
+}
+.title_options tr{
+    border-bottom: 1px solid #626366;
+}
+.title_options th{
+    font-size: 12px;
+    color: #b0aeac;
+    font-weight: normal;
+}
+.title_options .kuan{
+    width: 62px;
+}
+.title_options tr td{
+    font-size: 12px;
+    color: #8f98a0;
+    padding: 3px 0px 3px 0px;
+    text-align: center;
+}
+.yuyan{
+    text-decoration: none;
+    color: #67c1f5;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 5px;
+    display: inline-block;
+}
+.fore_images{
+    padding: 4px 0px 4px 0px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+.fore_img{
+    float: left;
+    width: 64px;
+    height: 64px;
+    margin-right: 4px;
+}
+.plusmore{
+    background-color: rgba( 103, 193, 245, 0.2 );
+    border-radius: 1px;
+    font-size: 13px;
+    font-weight: normal;
+    color: #67c1f5;
+    text-align: center;
+    padding-top: 14px;
+    height: 50px;
+    float: left;
+    width: 64px;
+}
+.plusmore:hover{
+    background-color: rgba(103,193,245,0.8);
+    color: #fff;
+}
+.six_top li{
+    color: #61686d;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+}
+.six_top li span{
+    color: #8f98a0;
+}
+.six_top li .bianse{
+    color: #fff;
+    cursor: pointer;
+}
+.six_top li .bianse:hover{
+    color: #67c1f5;
+}
+.six_bottom{
+    margin-top: 10px;
+}
+.six_bottom p{
+    cursor: pointer;
+    font-size: 12px;
+    min-height: 17px;
+    padding-top: 4px;
+    padding-left: 8px;
+    padding-bottom: 4px;
+    line-height: 17px;
+    background: rgba( 103, 193, 245, 0.1 );
+    color: #67c1f5;
+    border-radius: 1px;
+    margin-bottom: 2px;
+}
+.six_bottom p:hover{
+    color: #fff;
+    background: rgba( 103, 193, 245, 0.8);
+}
+.responsive_sanwen p{
+    border-radius: 2px;
+    border: none;
+    padding: 1px;
+    display: inline-block;
+    cursor: pointer;
+    color: #67c1f5;
+    background: rgba( 103, 193, 245, 0.2 );
+    padding: 3px 10px;
+}
+.responsive_sanwen .sanwen i{
+    background: url(images/sanwen.png);
+    background-position: -256px 0px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+}
+.responsive_sanwen p:hover{
+    color: #fff;
+    background: rgba( 103, 193, 245, 0.8 );
+}
+.responsive_enght .high{
+    background-color: #66CC33;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    float: left;
+}
+.clear{
+    clear: both;
+}
+.responsive_enght .logo{
+    background-image: url(images/enter_logo.png);
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 35px;
+    margin-left: 10px;
+    margin-top: 10px;
+    float: left;
+}
+.metac{
+    float: left;
+    width: 180px;
+}
+.metac_y{
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 2px;
+    font-size: 26px;
+    line-height: 26px;
+    margin-top: 4px;
+    float: left;
+}
+.metac_z p{
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: normal;
+    padding: 0px;
+    position: relative;
+    left: 2px;
+    clear: left;
+    color: #fff;
+    font-size: 11px;
+    cursor: pointer;
+}
+.metac_z p:hover{
+    color: #67c1f5;
+}
+
+
 
 .footer{
     padding: 16px 0 50px 0;

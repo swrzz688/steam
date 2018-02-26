@@ -151,9 +151,6 @@ a{
 .nav_shang a:hover{
     color: #fff;
 }
-.zhong .banxing{
-    position: relative;
-}
 .zhong_dh{
     width:940px;
     height: 35px;
@@ -410,9 +407,7 @@ a{
 .zhong_zcl{
     float: left;
     width: 210px;
-    position: absolute;
-    top: 0;
-    left: -240px;
+    padding-left: -210px;
 
 }
 .zhong_zcl  span{
@@ -439,6 +434,10 @@ a{
 }
 .zhong_leirong ul li a:hover{
     color: #fff;
+}
+.lishixing{
+    width: 1408px;
+    margin: 0 auto;
 }
 .zhong_zcl_tu img{
     width: 210px;
