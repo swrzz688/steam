@@ -734,7 +734,7 @@ a{
 }
 .erlun_one_xia{
     width: 306px;
-    height:114px;
+    height:91px;
     background: url(images/erlunbj.jpg)no-repeat;
     background-position-y:-114px; 
     margin-top: 0px;
@@ -818,37 +818,6 @@ a{
 .rehezi img{
     height: 295px;
     width: 306px;
-}
-.twoarrowsLeft,.twoarrowsRight{
-    position: absolute;
-    top: 50%;
-    width: 45px;
-    height: 108px;
-    margin-top: -54px;
-    cursor:pointer;
-}
-.twoarrowsLeft{
-    left: -45px;
-    background: linear-gradient( to right, rgba( 0, 0, 0, 0.3) 5%,rgba( 0, 0, 0, 0) 95%);
-}
-.twoarrowsLeft:hover{
-    background: linear-gradient( to right, rgba( 171, 218, 244, 0.3) 5%,rgba( 171, 218, 244, 0) 95%)
-}
-.twoarrowsRight{
-    right: -45px;
-    background: linear-gradient( to right, rgba( 0, 0, 0, 0) 5%,rgba( 0, 0, 0, 0.3) 95%);
-}
-.twoarrowsRight:hover{
-    background: linear-gradient( to right, rgba( 171, 218, 244, 0) 5%,rgba( 171, 218, 244, 0.3) 95%);`
-}
-.twoarrowsLeft div,.twoarrowsRight div{
-    width: 23px;
-    height: 36px;
-    margin: 36px auto; 
-    background: url(images/arrows.png) no-repeat;
-}
-.twoarrowsLeft div{
-    background-position: -23px 0;
 }
 .dabiaoqian{
         margin: 0px 0;
@@ -941,6 +910,7 @@ a{
 }
 .lun_three{
     position: relative;
+     height: 410px;
 }
 .lun3lr{
     box-shadow: 0 0 5px #000;
@@ -1063,39 +1033,10 @@ a{
     line-height: 17px;
     font-weight: 300;
 }
-
-.threearrowsLeft,.threearrowsRight{
-    position: absolute;
-    top: 50%;
-    width: 45px;
-    height: 108px;
-    margin-top: 168px;
-    cursor:pointer;
+.blli .dian{
+    height: 37px;
+    text-align: center;
 }
-.threearrowsLeft{
-    left: -45px;
-    background: linear-gradient( to right, rgba( 0, 0, 0, 0.3) 5%,rgba( 0, 0, 0, 0) 95%);
-}
-.threearrowsLeft:hover{
-    background: linear-gradient( to right, rgba( 171, 218, 244, 0.3) 5%,rgba( 171, 218, 244, 0) 95%)
-}
-.threearrowsRight{
-    right: -45px;
-    background: linear-gradient( to right, rgba( 0, 0, 0, 0) 5%,rgba( 0, 0, 0, 0.3) 95%);
-}
-.threearrowsRight:hover{
-    background: linear-gradient( to right, rgba( 171, 218, 244, 0) 5%,rgba( 171, 218, 244, 0.3) 95%);`
-}
-.threearrowsLeft div,.threearrowsRight div{
-    width: 23px;
-    height: 36px;
-    margin: 36px auto; 
-    background: url(images/arrows.png) no-repeat;
-}
-.threearrowsLeft div{
-    background-position: -23px 0;
-}
-
 .tuijian{
     background-color: #000;
     padding-top: 25px;
@@ -1189,24 +1130,10 @@ a{
 .valve_links img{
     vertical-align: bottom;
 }
-.erlun .erdian{
+.erlun .dian{
     height: 30px;
     text-align: center;
 }
-.erdian span{
-    display: inline-block;
-    margin: 12px 2px;
-    width: 15px;
-    height: 9px;
-    border-radius: 2px;
-    transition: background-color 0.2s;
-    background-color: hsla(202,60%,100%,0.2);
-    cursor: pointer;
-}
-.erdian span.yance{
-    background-color: hsla(202,60%,100%,0.4);
-}
-
 .clear{
     clear: both;
 }
@@ -1242,7 +1169,7 @@ a{
     width:618px;
 }
 .tab_matter li.show{
-    display: list-item;
+    display: block;
 }
 .tab_matter li{
     display: none;
@@ -1254,9 +1181,21 @@ a{
     padding:15px;
     background-color:#95bbd4;
 }
+.tab_xuanxiangka .show{
+    display: block;
+}
 .right_matter img{
     width: 274px;
     height: 150px;
+}
+.tab_List{
+    display: none;
+}
+.right_matter .tab_matter{
+    display: none;
+}
+.right_matter ul.show{
+    display: block;
 }
 .tab_List li{
     background:rgba( 0, 0, 0, 0.5);
@@ -1386,6 +1325,175 @@ a{
     cursor: pointer;
     vertical-align: top;
 }
-
-
+.home_ctn{
+    overflow:hidden;
+    margin: 50px 0;
+}
+.home_ctn .dian{
+    text-align: center;
+}
+.ctn_matter{
+    position: relative;
+}
+.ctn_matter h2{
+    color: #fff;
+    margin: 0 0 10px;
+    font-size: 17px;
+    font-weight: normal;
+    padding-top: 2px;
+}
+.matter_right{
+    float: right;
+    text-transform: none;
+    letter-spacing: normal;
+    display: inline-block;
+    position: relative;
+    top: -3px;
+}
+.matter_right a{
+    border-radius: 2px;
+    border: none;
+    padding: 1px;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+.matter_right a span{
+    border-radius: 2px;
+    display: block;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 2px;
+    padding: 0 15px;
+    font-size: 12px;
+    line-height: 24px;
+}
+.matter_right a span:hover{
+    border: 1px solid rgba(255,255,255,0.8);
+}
+.tu_matter{
+    height: 134px;
+    position: relative;
+}
+.tu_matter>div{
+    display: none;
+}
+.tu_matter>.show{
+    display: block;
+}
+.tu_matter>.show a{
+    margin-right: 3px;
+    box-shadow: 0 0 5px #000;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    width: 229px;
+    background: -webkit-linear-gradient( -45deg, rgba(64,121,153,1) 5%,rgba(42,62,89,1) 95%);
+    color: #fff;
+    font-size: 12px;
+    height: 134px;
+}
+.tu_matter>.show a img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+.store_jq{
+    margin: 0;
+    text-align: right;
+    padding: 5px;
+    line-height: 17px;
+    min-height: 17px;
+    font-size: 12px;
+    position: relative;
+}
+.store_jq .jq{
+    display: inline-block;
+    padding: 0 3px;
+    background-color: rgba(20,31,44,0.4);
+    border-radius: 1px;
+}
+.jq_hz{
+    padding: 0 6px;
+    font-size: 11px;
+    color: #acdbf5;
+    display: inline;
+}
+.capsule{
+    height: 106px;
+}
+.tu_matter>.show a.yuju{
+    margin-right: 0px;
+}
+.home_ctn .arrowsLeft,.arrowsRight{
+    position: absolute;
+    top: 50%;
+    width: 45px;
+    height: 108px;
+    margin-top: -36px;
+    cursor:pointer;
+}
+.home_ctn .arrowsLeft{
+    left: -45px;
+    background: linear-gradient( to right, rgba( 0, 0, 0, 0.3) 5%,rgba( 0, 0, 0, 0) 95%);
+}
+.home_ctn .arrowsLeft:hover{
+    background: linear-gradient( to right, rgba( 171, 218, 244, 0.3) 5%,rgba( 171, 218, 244, 0) 95%)
+}
+.home_ctn .arrowsRight{
+    right: -45px;
+    background: linear-gradient( to right, rgba( 0, 0, 0, 0) 5%,rgba( 0, 0, 0, 0.3) 95%);
+}
+.home_ctn .arrowsRight:hover{
+    background: linear-gradient( to right, rgba( 171, 218, 244, 0) 5%,rgba( 171, 218, 244, 0.3) 95%);`
+}
+.home_ctn .arrowsLeft div,.arrowsRight div{
+    width: 23px;
+    height: 36px;
+    margin: 36px auto; 
+    background: url(images/arrows.png) no-repeat;
+}
+.home_ctn .arrowsLeft div{
+    background-position: -23px 0;
+}
+.markink{
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+.markink h2{
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0 0 10px;
+    font-size: 17px;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+.markink_conter .home_mark{
+    display: block;
+    float: left;
+    color: #acdbf5;
+    font-size: 11px;
+    vertical-align: top;
+    background: linear-gradient( 135deg, rgba(37,49,63,1) 5%,rgba(54,97,125,1) 95%);
+}
+.markink_conter .small{
+    margin: 0 0 10px 10px;
+}
+.markink_conter .home_mark img{
+     width: 368px;
+    height: 398px;
+}
+.markink_conter .small img{
+     width: 173px;
+    height: 182px;
+}
+.danji{
+    line-height: 15px;
+    height: 16px;
+    padding: 4px;
+    text-align: right;
+}
 

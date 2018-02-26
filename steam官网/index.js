@@ -180,7 +180,7 @@ $hezi.mouseleave(function(){
 $(".tab_List li").mouseenter(function(){
 	if(!$(this).hasClass("show")){
 		var zhi = $(this).index();
-		$(".tab_matter .show").fadeOut(100,function(){ 	//先渐隐
+		$(".tab_matter .show").fadeOut(100,function(){ 		//先渐隐
 			$(".tab_matter li").eq(zhi).fadeIn(100);		//后渐显
 		});
 		$(".tab_List li").removeClass("show")
@@ -189,6 +189,48 @@ $(".tab_List li").mouseenter(function(){
 		$(".tab_matter li").eq(zhi).addClass("show")
 	}
 })
+//tab选项卡点击事件
+
+for(var t=0;t<$(".left_top a").length;t++){
+	$(".left_top a").eq(t).attr("xiabiao",t);
+}
+
+$(".left_top a").click(function(){
+	$(".left_top a").removeClass("tab_name")
+	$(this).addClass("tab_name");
+	z = $(this).attr("xiabiao");
+	if($(this).attr("xiabiao")==z){
+		$(".left_matter .tab_List").removeClass("show");
+		$(".right_matter ul").removeClass("xian");
+		$(".left_matter .tab_List").eq(z).addClass("show");
+		$(".right_matter ul").eq(z).addClass("xian");
+	}
+		
+});
+
+
+
+
+
+
+
+
+// $(".tab").mouseenter(function(){
+// 	liveTab = $(this);
+// 	//所在的（this）选项卡游戏列表添加  非法属性（下标）
+// 	for(var i = 0 ; i < liveTab.find(".tableList").length ; i++){
+// 		liveTab.find(".tableList").eq(i).attr("xiabiao",i);
+// 	}
+// 	liveTab.find(".tableList").mouseenter(function(){
+// 		if(!$(this).hasClass("foucs")){
+// 			liveTab.find(".tableList").removeClass("foucs")
+// 			$(this).addClass("foucs")
+// 			b = $(this).attr("xiabiao");
+// 			liveTab.find(".tableMain").hide();
+// 			liveTab.find(".tableMain").eq(b).fadeIn(100);
+// 		}
+// 	});
+// });
 
 
 
