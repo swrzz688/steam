@@ -399,7 +399,6 @@ a{
     font-size: 14px;
     font-style: italic;
     color: #333;
-    letter-spacing: 2px;
 }
 .zhong_dh .ipt input:hover{
     border:1px solid #348fec;
@@ -1147,7 +1146,7 @@ a{
 }
 .tab_List .tab_matter{
     float:left;
-    margin-left:25px;
+    margin-left:10px;
 }
 .tab_xuanxiangka{
     width:100%;
@@ -1234,7 +1233,7 @@ a{
 }
 .tab_matter>div{
     color: #384959;
-    line-height: 20px;
+    line-height: 12px;
     font-size: 12px;
 }
 .tab_review_summary{

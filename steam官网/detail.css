@@ -396,7 +396,6 @@ color: #fff;
     font-size: 14px;
     font-style: italic;
     color: #333;
-    letter-spacing: 2px;
 }
 .zhong_dh .ipt input:hover{
     border:1px solid #348fec;
@@ -458,7 +457,7 @@ color: #fff;
 .lunbo{
     background: -webkit-linear-gradient(left, rgba(0,0,0,0) 50%,rgba(0,0,0,0.4) 100%);
     background-position: bottom;
-    padding-bottom: 430px;
+    padding-bottom: 440px;
     background-repeat: no-repeat;
     margin: 0px auto;
 }
@@ -573,6 +572,7 @@ color: #fff;
     overflow: hidden;
     margin-right: 16px;
     position: relative;
+    height: 430px;
 }
 .lz_lr .lr_datu{
     background-color: #000;
@@ -600,13 +600,17 @@ color: #fff;
     position: relative;
     height: 69px;
 }
-.selector{
+.tu_item{
+    position: relative;
+}
+.tu_item i.kuang{
     position: absolute;
     width: 116px;
     height: 77px;
-    top: -10px;
     background-image: url(images/kuang.png);
     z-index: 9;
+    left: 0;
+    top: -12px;
 }
 .sceoll .tu_item{
     float: left;
@@ -622,25 +626,93 @@ color: #fff;
     position: relative;
     height: 18px;
 }
-.tu_ctn .left_ctn{
-   /* position: absolute;
+.tu_ctn .left_ctn,.right_ctn{
+    position: absolute;
     width: 38px;
-    bottom: 0;s
+    top:0;
+    bottom: 0;
     border-radius: 3px;
     cursor: pointer;
     background-color: rgba( 35, 60, 81, 0.4 );
-    left: 0;*/
+}
+.left_ctn{
+    left: 0px;
+}
+.right_ctn{
+    right:0px;
 }
 .left_ctn span{
-   /* display:inline-block;
+    display:inline-block;
     background-image: url(images/xiangqing.png);
     background-position: -18px 0px;
     background-repeat: no-repeat;
     width: 9px;
     height: 7px;
     margin-left: 13px;
-    margin-top: 5px;*/
+    margin-bottom: 5px;
 }
+.left_ctn:hover span{
+    background-position: -18px -7px;
+}
+.left_ctn:hover{
+        background-color: rgba( 103, 193, 245, 0.5 );
+}
+.right_ctn span{
+    display:inline-block;
+    background-image: url(images/xiangqing.png);
+    background-position: -8px 0px;
+    background-repeat: no-repeat;
+    width: 9px;
+    height: 7px;
+    margin-left: 13px;
+    margin-bottom: 5px;
+}
+.right_ctn:hover span{
+    background-position: -8px -7px;
+}
+.right_ctn:hover{
+        background-color: rgba( 103, 193, 245, 0.5 );
+}
+.conter_ctn{
+    position: absolute;
+    left: 39px;
+    right: 39px;
+    top: 0;
+    bottom: 0;
+    background-color: rgba( 0, 0, 0, 0.2 );
+    border-radius: 3px;
+}
+.conter_dtn{
+    top: 0;
+    background-color: rgba( 35, 60, 81, 0.4 );
+    border-radius: 3px;
+    height: 18px;
+    width: 60px;
+    cursor: pointer;
+}
+.conter_dtn:hover{
+    background-color: rgba( 103, 193, 245, 0.5 );
+}
+.regard_left{
+    width: 616px;
+    float:left;
+    font-size: 14px;
+    color: #acb2b8;
+    margin-top: 16px;
+}
+.goumai .gou_warpper{
+    margin-bottom: 28px;
+}
+.warpper_game{
+    position: relative;
+    background: linear-gradient(135deg, rgba(97,100,101,0.3) 0%,rgba(226,244,255,0.3) 100%);
+    font-size: 12px;
+    color: #b0aeac;
+    padding: 16px;padd
+}
+
+
+
 
 
 
