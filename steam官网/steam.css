@@ -1,6 +1,7 @@
 *{margin:0;padding:0;}
 body{
-    background-image: url(images/beijin.png);
+    background: url(images/beijin.png) #1b2838;
+    background-repeat: no-repeat;
     width: 100%;
 }
 li{
@@ -1121,6 +1122,7 @@ a{
     margin-top: 15px;
     float: left;
     font-size: 13px;
+    color: #8F98A0;
 }
 .valve_links a{
     color: #C6D4DF;

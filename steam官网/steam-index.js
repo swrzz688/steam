@@ -75,7 +75,7 @@ $(".arrowsLeft").click(function(){
 })
 
 //弹出层轮播图
-$(".aoto .box").mouseenter(function(){
+$(".aoto .hezi").mouseenter(function(){
 	$(this).find(".tanchucen").fadeIn();
 	var $imgList = $(this).find(".tanchucen img")
 	var n = 0;
@@ -95,7 +95,7 @@ $(".aoto .box").mouseenter(function(){
 })
 
 // 鼠标移上右边小图显示左边大图
-$(".aoto .box").mouseenter(function(){
+$(".aoto .hezi").mouseenter(function(){
 	var $xiaotulist=$(this).find(".xiaotu a")
 	// 找到右边的小图
 	var $datulist= $(this).find(".zuotu img")	
@@ -105,7 +105,7 @@ $(".aoto .box").mouseenter(function(){
 		//设置非法属性
 	}
 	$xiaotulist.mouseenter(function(){
-		$(".box").find(".zuotu").css({
+		$(".hezi").find(".zuotu").css({
 			background:"none", 	
 			//鼠标移上时隐藏中间的背景图片
 		})
@@ -114,7 +114,7 @@ $(".aoto .box").mouseenter(function(){
 		//显示大图
 	})
 	$xiaotulist.mouseleave(function(){
-		$(".box").find(".zuotu").css({
+		$(".hezi").find(".zuotu").css({
 			background:"",		
 			//鼠标离开时显示中间的背景图片
 		})
@@ -183,8 +183,34 @@ $(".tab_List li").mouseenter(function(){
 		$(".tab_matter li").eq(zhi).addClass("show")
 	}
 })
-//tab选项卡点击事件
 
+// $(".tab").mouseenter(function(){
+// 	liveTab = $(this);
+// 	//所在的（this）选项卡游戏列表添加  非法属性（下标）
+// 	for(var i = 0 ; i < liveTab.find(".tableList").length ; i++){
+// 		liveTab.find(".tableList").eq(i).attr("xiabiao",i);
+// 	}
+// 	liveTab.find(".tableList").mouseenter(function(){
+// 		if(!$(this).hasClass("foucs")){
+// 			liveTab.find(".tableList").removeClass("foucs")
+// 			$(this).addClass("foucs")
+// 			b = $(this).attr("xiabiao");
+// 			liveTab.find(".tableMain").hide();
+// 			liveTab.find(".tableMain").eq(b).fadeIn(100);
+// 		}
+// 	});
+// });
+
+
+
+
+
+
+
+
+
+
+//tab选项卡点击事件
 for(var t=0;t<$(".left_top a").length;t++){
 	$(".left_top a").eq(t).attr("xiabiao",t);
 }
