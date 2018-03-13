@@ -498,3 +498,11 @@ color: #fff;
     background-color: rgba(103,193,245,0.8);
     color: #fff;
 }
+label{
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+}
+#weitime{
+    vertical-align: text-bottom;
+}

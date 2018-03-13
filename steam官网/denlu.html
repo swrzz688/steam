@@ -185,13 +185,15 @@
 							<p>到现有的Steam账户</p>
 							<br>
 							<form name="logon">
-								<div class="logon_row">
+								<div class="logon_row"> 
 									<div class="input_name">Steam 账户名称</div>
-									<input type="text" class="background_input">
+									<input type="text" class="background_input" id="uname">
 								</div>
 								<div class="logon_row">
 									<div class="input_name">密码</div>
-									<input type="password" class="background_input">
+									<input type="password" class="background_input" id="mima">
+									<input type="checkbox" id="weitime" checked>
+									<label for="weitime">七天内免登录</label>
 								</div>
 							</form>
 						</div>
@@ -205,7 +207,7 @@
 						<div style="clear:left;"></div>
 						<div class="loginbox_left btn">
 							<div class="login_btn">
-								<button class="btn_niu"><span>登录</span></button>
+								<button class="btn_niu" id="denlu_btn"><span>登录</span></button>
 							</div>
 						</div>
 						<div class="loginbox_right">
@@ -220,5 +222,7 @@
 			<div style="clear:both;"></div>
 		</div>
 	</div>
+
+	<script type="text/javascript" src="denlu.js"></script>
 </body>
 </html>

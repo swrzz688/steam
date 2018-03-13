@@ -30,8 +30,6 @@ $(".tu_item img").click(function(){
 	kuangs(adv.m)
 })
 
-
-
 var itemWrap = $(".sceoll");
 var kuangList = itemWrap.find("i");
 //当前所在的张数
@@ -79,28 +77,40 @@ $(".right_ctn").click(function(){
 	kuangs(adv.m)
 	xiaotudj()
 })
+function right(){
+	++adv.m;
+	if(adv.m == adv.count){
+		adv.m = 0;
+		movekuang();
+	}
+	if(adv.m == adv.n + 5){
+		movekuang() 
+	}
+	kuangs(adv.m)
+	xiaotudj()
+}
 
 //左点击逻辑
-// $(".left_ctn").click(function(){
-// 	--adv.m
-// 	if(adv.m == -1){
-// 		adv.m = adv.count-1
-// 		movekuang()
-// 	}
-// 	if(adv.m < adv.count-5 && adv.m>=5){
-// 		movekuang()
-// 	}
-// 	if(adv.m==4){
-// 		itemWrap.animate({
-// 			"marginLeft": 0
-// 		});
-// 		$(".conter_dtn").animate({
-// 			left : 0 + "px"
-// 		})
-// 	}
-	// kuangs()
-	
-// })
+$(".left_ctn").click(function(){
+	--adv.m
+	if(adv.m == -1){
+		adv.m = adv.count-1
+		movekuang();
+	}
+	if(adv.m < adv.count-5 && adv.m>=5){
+		movekuang()
+	}
+	if(adv.m==4){
+		itemWrap.animate({
+			"marginLeft": 0
+		});
+		$(".conter_dtn").animate({
+			left : 0 + "px"
+		})
+	}
+	kuangs(adv.m)
+	xiaotudj()
+})
 
 //滑动条
 $(".conter_dtn").mousedown(function(event){
@@ -140,4 +150,27 @@ $(".conter_dtn").mousedown(function(event){
 		body.onselectstart=null;
 		window.onmousemove=null;
 	}
+})
+
+var autoplay=setInterval(function(){
+	right()
+},2000)
+$(".lz_lr").mouseenter(function(){
+	clearInterval(autoplay)
+})
+$(".lz_lr").mouseleave(function(){
+	autoplay=setInterval(function(){
+		right()
+	},2000)
+})
+
+
+// 展开逻辑
+$(".zhankai_lr").click(function(){
+	$lr = $(this).closest(".auto_rightctn").find(".autogame_tu");
+	$zhankai = $(this).closest(".auto_rightctn").find(".zhankai_lr");
+	$zhankai.hide()
+	$lr.animate({
+		maxHeight:"1913px"
+	},1000)
 })
