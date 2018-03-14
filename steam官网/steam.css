@@ -463,6 +463,9 @@ a{
     height: 353px;
     position: relative;
 }
+.lunbotu .dahezi.show{
+    display: block;
+}
 .dahezi .hezi{
     position: absolute;
     top: 0;
@@ -481,7 +484,7 @@ a{
     margin-bottom: 10px;
     font-weight: normal;
 }
-.nba .zuotu{
+/*.nba .zuotu{
     background: url(images/nba_e.jpg)no-repeat;
 }
 .longzhu .zuotu{
@@ -489,7 +492,7 @@ a{
 }
 .juedi .zuotu{
     background: url(images/juedi_e.jpg)no-repeat;
-}
+}*/
 .hezi .zuotu a{
     display: block;
     height: 353px;
@@ -501,7 +504,7 @@ a{
     left: 0;
     width: 616px;
     height: 353px;
-    display: none;
+    /*display: none;*/
 }
 .hezi .youtu{
     float: right;
@@ -512,15 +515,16 @@ a{
     box-shadow: 2px 0 8px 1px #000;
 }
 .youtu .gameName{
-    font-size: 24px;
+    font-size: 23px;
     color: #fff;
     line-height: 26px;
-    margin-left: 18px;
+    margin-left: 5px;
     font-weight: normal;
     max-height: 52px;
     padding: 10px 6px;
     height: 52px;
-    width: 324px;
+    width: 300px;
+    
 }
 .hezi .youtu .xiaotu img{
     width: 147px;
@@ -552,6 +556,38 @@ a{
     color: #fff;
     margin-bottom: 10px;
 }
+.zhekou{
+    color: #a4d007;
+    background: #4c6b22;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 0 3px;
+    float: left;
+}
+.many{
+    color: #7193a6;
+    display: inline-block;
+    font-size: 11px;
+    text-decoration: line-through;
+    line-height: 15px;
+    cursor: pointer;
+    background: #000000;
+    padding: 0 5px;
+    float: left;
+}
+.suxiaojia{
+    background: #000000;
+    font-size: 11px;
+    color: #acdbf5;
+    display: inline-block;
+    float: left;
+    line-height: 15px;
+    cursor: pointer;
+    padding: 0 5px;
+    padding-left: 0px;
+}
 .youtu .mowei .text{
     font-size: 21px;
     font-weight: normal;    
@@ -564,14 +600,14 @@ a{
     padding: 1px 3px 1px 3px;
     border-radius: 2px;
 }
-.youtu .mowei .many{
+.youtu .mowei .jiage{
     font-size: 11px;
-    margin-top: 25px;
+    margin-top: 30px;
 }
 .win,.mac,.linux{
-    display:inline-block;
     width: 20px;
     height: 20px;
+    display: none;
 }
 .youtu .mowei .tubiao{
     position: absolute;
@@ -683,13 +719,18 @@ a{
 }
 .biaoqian{
     padding-top: 5px;
+    overflow: hidden;
+    width: 200px;
+    height: 24px;
 }
 .biaoqian span{
-    margin-top: 20px;
+    display: inline-block;
+    margin-top: 2px;
     padding: 3px 5px;
     background-color: #aaa;
     border-radius: 3px;
     color: #fff;
+    margin-right: 2px;
 }
 .erlun{
     width: 940px;
